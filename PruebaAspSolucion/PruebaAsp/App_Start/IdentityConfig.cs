@@ -50,10 +50,13 @@ namespace PruebaAsp
             manager.PasswordValidator = new PasswordValidator
             {
                 RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
+                //7 RequireNonLetterOrDigit = true,
+                RequireNonLetterOrDigit = false,
                 RequireDigit = true,
-                RequireLowercase = true,
-                RequireUppercase = true,
+                //7 RequireLowercase = true,
+                RequireLowercase = false,
+                //7 RequireUppercase = true,
+                RequireUppercase = false,
             };
 
             // Registre proveedores de dos factores. Esta aplicación usa Teléfono y Correos electrónico como paso para la recepción de un código para comprobar el usuario
